@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+	<Name value = "MercenaryDiplomacyFix"/>
+	<Id value = "MercenaryDiplomacyFix"/>
+	<Version value = "e1.5.4"/>
+	<DefaultModule value="true"/>
+	<SingleplayerModule value="true"/>
+	<Official value="false" />
+	<DependedModules>
+	</DependedModules>
+	<SubModules>
+		<SubModule>
+			<Name value = "MercenaryDiplomacyFixSubModule"/>
+			<DLLName value = "MercenaryDiplomacyFix.dll"/>
+			<SubModuleClassType value = "MercenaryDiplomacyFix.MercenaryDiplomacyFixSubModule"/>			
+			<Tags>
+			</Tags>
+		</SubModule>
+	</SubModules>
+	<Xmls>
+	</Xmls>
+</Module>
