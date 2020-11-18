@@ -60,7 +60,7 @@ namespace MercenaryDiplomacyFix
             KingdomDecision newKingdomDecision = ____unresolvedDecisions[____unresolvedDecisions.Count - 1];
 
             // If the player is a mercenary of the kingdom, then immediately resolve without player input.
-            // Note that the original code uses "IsClanTypeMercenary" which is never true for the player. The player tracks this through "IsUnderMercenaryService."
+            // The original code doesn't check for mercenary service when adding the decision. Since the player is a mercenary, it should ignore it for decision making.
             if (newKingdomDecision.Kingdom == Clan.PlayerClan.Kingdom && Clan.PlayerClan.IsUnderMercenaryService)
             {
                 Debug.Print("MercenaryDiplomacyFix.MercenaryDecisionsFixPatch.Kingdom.AddDecision.Postfix: Forced decision to complete without player, who is a mercenary.");
